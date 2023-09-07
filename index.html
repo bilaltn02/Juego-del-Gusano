@@ -1,0 +1,39 @@
+<!-- LA IMAGEN DE LA MANZANA SOLO SE ME CARGA BIEN SI ABRO EL HTML DESDE EL VISUAL CODE Y NO SE POR QUÉ -->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JUEGO</title>
+
+        <link href="css/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+        <div class="titulo">
+            <span class="titulo">
+                El Juego del Gusano
+            </span>
+            
+            <span class="puntuacion">
+                <span class="imagen">
+                    <img class="manzana" src="images/manzana.png" alt="">:
+                </span>
+                <span id="puntuacion">
+                <!-- En este span se pone la puntuación -->
+                </span>
+            </span>
+
+            <!-- Con el boton lo que hago es refrescar la pagina -->
+            <span>
+                <input class="boton" type="button" value="Volver a jugar" onclick="location.reload()"/>
+            </span>
+        </div>
+
+        <div class="contenedor" id="contenedor">   
+        </div>
+        
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
